@@ -6,11 +6,18 @@ DNAchips is a project to build an open source DNA synthesis chip. It is based of
 
 ## Goals
 
-Our goal with DNAchips is to build semiconductor microchips, code, and protocols.
+We have 4 goals with DNAchips version 1:
 
 1. Design and synthesize a chip capable voltage change at specific locations
+2. Test a variety of conditions and buffers to create a "virtual flask", visualized with bromophenol blue
+3. Run a DNA synthesis process to build at least 20mers that can be used for PCR
+4. Develop a protocol for testing oligo output quality (nanopore)
 
 # Docs
+
+## Words
+
+1. Virtual flask: 
 
 ## Tooling
 1. [chisel3](https://github.com/chipsalliance/chisel3) Higher level Verilog design
