@@ -8,16 +8,24 @@ DNAchips is a project to build an open source DNA synthesis chip. It is based of
 
 We have 4 goals with DNAchips version 1:
 
-1. Design and synthesize a chip capable voltage change at specific locations
-2. Test a variety of conditions and buffers to create a "virtual flask", visualized with bromophenol blue
+1. Design and synthesize a chip capable of voltage change at specific locations
+2. Test a variety of conditions and buffers to create a virtual flask, visualized with bromophenol blue
 3. Run a DNA synthesis process to build at least 20mers that can be used for PCR
 4. Develop a protocol for testing oligo output quality (nanopore)
 
 # Docs
 
-## Words
+## Definitions
 
-1. Virtual flask: 
+1. Oligo: Otherwise known as "oligonucleotide" or an "oligomer". These are short pieces of DNA (or, in rare cases, RNA) that are usually synthesized chemically.
+2. Virtual flask: A flask whose boundries are defined only by some arbitrary line. In our case, acid produced locally by electronics will be the flask, with boundries being buffer surrounding the electrodes, keeping the acidic conditions only in the local area around the electrode.
+3. Mask: During silicon photolithography, a "mask" or "photomask" is an opaque plate with small holes that allow light to shine through. Using optics, the shadow of the plate is made extremely small. This shadow defines how a silicon chip is built.
+4. Oligo pool: A pool of many individually different oligos. Usually they are synthesized on a chip using electrodes or inkjet printing, with the output getting pooled together for downstream usage.
+5. Nanopore: A sequencing method that uses the electrical change of DNA as it passes through a tiny protein pore to figure out that DNA's sequence. We plan on using this sequencing method for validating our output oligos (among other methods)
+
+## Programs to install
+1. [klayout](https://www.klayout.de/) Lets you examine your mask layout
+2. [gtkwave](http://gtkwave.sourceforge.net/) Allows you examine traces after virtually testing your chip
 
 ## Tooling
 1. [chisel3](https://github.com/chipsalliance/chisel3) Higher level Verilog design
