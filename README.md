@@ -1,7 +1,5 @@
 # DNAchips
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![UPRJ_CI](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml) [![Caravel Build](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml)
-
 DNAchips is a project to build an open source DNA synthesis chip. It is based off of an [expired patent](https://patents.google.com/patent/US6280595B1/en) from the Combimatrix Corp. They spun this technology out into a company called CustomArray, which was subsequently acquired by Genscript, and now powers their high throughput DNA synthesis pipelines. The fundamental costs of high throughput DNA synthesis - or the materials themselves - are cheap, and silicon microchips can be synthesized at an extraordinarily low cost. DNA synthesis providers have failed to make DNA synthesis more affordable over the years. We, together, can *twist* their arms into lowering prices and turnaround time by offering an alternative to the status quo that belongs to all.
 
 ## Goals
@@ -23,10 +21,6 @@ We have 4 goals with DNAchips version 1:
 4. Oligo pool: A pool of many individually different oligos. Usually they are synthesized on a chip using electrodes or inkjet printing, with the output getting pooled together for downstream usage.
 5. Nanopore: A sequencing method that uses the electrical change of DNA as it passes through a tiny protein pore to figure out that DNA's sequence. We plan on using this sequencing method for validating our output oligos (among other methods)
 
-## Programs to install
-1. [klayout](https://www.klayout.de/) Lets you examine your mask layout
-2. [gtkwave](http://gtkwave.sourceforge.net/) Allows you examine traces after virtually testing your chip
-
 ## Tooling
 1. [chisel3](https://github.com/chipsalliance/chisel3) Higher level Verilog design
 2. [caravel example project](https://github.com/efabless/caravel_user_project) An example project using caravel, the base for efabless chipignite
@@ -44,8 +38,5 @@ We have 4 goals with DNAchips version 1:
 1. [Webinar: Oligo pools design, synthesis, and research applications](https://www.youtube.com/watch?v=gAH2kwvc7vM): A webinar on the electrochemical synthesis technology
 2. [DNA synthesis on electrochemical chips](https://doi.org/10.1371/journal.pone.0000034): The original DNA synthesis on electrochemical chip paper
 3. [DNA synthesis using electrodes patent](https://patents.google.com/patent/US6280595B1/en): The original DNA synthesis patent (expired)
-
-# Caravel docs
-
-Refer to [README](docs/source/quickstart.rst) for a quick start of how to use caravel_user_project
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
+4. [Helix: An Electrochemical CMOS DNA Synthesizer](https://ieeexplore.ieee.org/document/9830446): A modern reproduction of the technology
+5. [Direct on-chip DNA synthesis using electrochemically modified gold electrodes as solid support](https://doi.org/10.7567/JJAP.57.04FM01): Deposition onto gold electrodes directly, without a porous layer
